@@ -4,10 +4,10 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import imge1 from "../assets/img1.jpg"
 import imge2 from "../assets/img2.jpg"
- import imge3 from "../assets/img3.jpg"
- import png1 from "../assets/png1.png"
+import imge3 from "../assets/img3.jpg"
+import png1 from "../assets/png1.png"
 
- const HedingOption = {
+const HedingOption = {
   pos: 'absolute',
   left: '50%',
   top: '50%',
@@ -15,30 +15,30 @@ import imge2 from "../assets/img2.jpg"
   textTransform: 'uppercase',
   p: '4',
   size: '2xl'
- }
+}
 
 const Home = () => {
   return (
     <Box>
-     <MyCarousel/>
-   <Container maxW={'container.xl'} minH={'100vh'} >
-    <Heading
-     textTransform={'uppercase'}
-      py={'2'} 
-      w={"fit-content"}
-      m='auto' 
-      borderBottom={"2px solid"}
-    
-    >
-      Services
-    </Heading>
-    <Stack
+      <MyCarousel />
+      <Container maxW={'container.xl'} minH={'100vh'} >
+        <Heading
+          textTransform={'uppercase'}
+          py={'2'}
+          w={"fit-content"}
+          m='auto'
+          borderBottom={"2px solid"}
+
+        >
+          Services
+        </Heading>
+        <Stack
           h="full"
           p={'4'}
           alignItems={'center'}
           direction={['column', 'row']}
         >
-          <Image src={png1} h={['40', '400']}  />
+          <Image src={png1} h={['40', '400']} />
 
           <Text
             letterSpacing={'widest'}
@@ -58,33 +58,33 @@ const Home = () => {
 
           </Text>
         </Stack>
-   </Container>
+      </Container>
 
     </Box>
-)
+  )
 
 }
-  const  MyCarousel=()=>(
-    <Carousel autoPlay infiniteLoop interval={1000} showStatus={false} showThumbs={false} showArrows={false}> 
+const MyCarousel = () => (
+  <Carousel autoPlay infiniteLoop interval={1000} showStatus={false} showThumbs={false} showArrows={false}>
     <Box w={'full'} h={'100vh'}>
-     <Image src={imge1} h={'full'} w={'full'} objectFit={'cover'} />
-     <Heading bgColor={'blackAlpha.600'} color={'white'}{...HedingOption}>Whach the Future</Heading>
+      <Image src={imge1} h={'full'} w={'full'} objectFit={'cover'} />
+      <Heading bgColor={'blackAlpha.600'} color={'white'}{...HedingOption}>Whach the Future</Heading>
     </Box>
 
 
-     <Box w={'full'} h={'100vh'}>
-     <Image src={imge2} h={'full'} w={'full'} objectFit={'cover'}/>
-     <Heading bgColor={'blackAlpha.600'} color={'white'}{...HedingOption}>Lern & Wach </Heading>
-    </Box> 
+    <Box w={'full'} h={'100vh'}>
+      <Image src={imge2} h={'full'} w={'full'} objectFit={'cover'} />
+      <Heading bgColor={'blackAlpha.600'} color={'white'}{...HedingOption}>Lern & Wach </Heading>
+    </Box>
 
     <Box w={'full'} h={'100vh'}>
-     <Image src={imge3} h={'full'} w={'full'} objectFit={'cover'}/>
-     <Heading bgColor={'blackAlpha.600'} color={'white'} {...HedingOption}>Future is Skill</Heading>
-    </Box> 
-    
-    </Carousel>
-  )
- 
+      <Image src={imge3} h={'full'} w={'full'} objectFit={'cover'} />
+      <Heading bgColor={'blackAlpha.600'} color={'white'} {...HedingOption}>Future is Skill</Heading>
+    </Box>
+
+  </Carousel>
+)
+
 
 
 export default Home
